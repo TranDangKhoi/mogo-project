@@ -28,3 +28,20 @@
 - Cách để export 1 ảnh ra từ photoshop:
   - File -> Export -> Save for Web (Legacy)
   - Tổ hợp phím: Ctrl + Shift + Alt + S
+
+# Kiến thức về SASS
+
+- Sử dụng câu điều kiện trong SASS:
+  - @if $variable == "argument"
+
+```scss
+@mixin absoluteCenter($direction) {
+  position: absolute;
+  // @if $variable === "argument"
+  @if $direction == "left" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+```

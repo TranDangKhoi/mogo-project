@@ -4,15 +4,16 @@ import { useExpandNavigation } from "../../hooks/useExpandNavigation";
 import "./_header.scss";
 import "./HeaderData";
 import { HeaderTopData, HeaderBottomData } from "./HeaderData";
+import Container from "../container/Container";
 const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="container">
+        <Container>
           <HeaderTop></HeaderTop>
           <HeaderContent></HeaderContent>
           <HeaderBottom></HeaderBottom>
-        </div>
+        </Container>
       </header>
     </>
   );
@@ -64,7 +65,12 @@ const HeaderBottom = () => {
     <div className="header-bottom">
       {HeaderBottomData.length > 0 &&
         HeaderBottomData.map((item) => (
-          <div className="header-bottom-item" key={item.id}>
+          <div
+            className={`header-bottom-item ${
+              item.currentlyIn ? "is-active" : null
+            }`}
+            key={item.id}
+          >
             <span className="header-bottom-number">{item.order}</span>
             <span className="header-bottom-text">{item.title}</span>
           </div>

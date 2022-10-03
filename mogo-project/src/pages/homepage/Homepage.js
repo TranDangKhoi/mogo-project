@@ -1,12 +1,17 @@
 import React from "react";
+import Container from "../../components/container/Container";
+import Paragraph from "../../components/paragraph/Paragraph";
 
 const Homepage = () => {
   return (
-    <div>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero dolorum
-      facilis tempore totam quod, expedita eius. Delectus laboriosam accusamus
-      quaerat ipsa dolor porro mollitia nihil, eum laborum facilis quo nisi?
-    </div>
+    <Container>
+      <Paragraph caption={"What we do"} title={"Story about us"}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+        blanditiis cupiditate beatae ullam a perferendis asperiores tempora
+        libero quaerat amet! Aspernatur, doloribus. Minus placeat itaque,
+        obcaecati corrupti maxime accusantium autem!
+      </Paragraph>
+    </Container>
   );
 };
 

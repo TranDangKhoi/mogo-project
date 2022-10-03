@@ -1,0 +1,38 @@
+@import "../../helper/styles";
+
+.paragraph {
+  padding-top: 9.3rem;
+  padding-bottom: 11rem;
+  background: white;
+  text-align: center;
+
+  &-caption {
+    font-family: $tertiary-font;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  &-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    &::after {
+      content: "";
+      bottom: 0;
+      @include absoluteCenter(horizontal);
+      @include bg($primary-color);
+      width: 10%;
+      height: 4px;
+    }
+  }
+  &-desc {
+    font-size: 1.5rem;
+    font-family: $secondary-font;
+    line-height: 1.4;
+    color: $text-color;
+    font-weight: 300;
+    margin-bottom: 10rem;
+  }
+}

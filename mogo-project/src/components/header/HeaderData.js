@@ -41,20 +41,24 @@ export const HeaderBottomData = [
     id: 1,
     order: "01",
     title: "Intro",
+    currentlyIn: true,
   },
   {
     id: 2,
     order: "02",
     title: "Work",
+    currentlyIn: false,
   },
   {
     id: 3,
     order: "03",
     title: "About",
+    currentlyIn: false,
   },
   {
     id: 4,
     order: "04",
     title: "Contact",
+    currentlyIn: false,
   },
 ];
