@@ -1,17 +1,29 @@
+@import "./helper/variable";
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font: inherit;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.5;
+  line-height: 1;
+  font-family: $primary-font;
+  color: $title-color;
+  font-size: 1.4rem;
 }
 
 img,
@@ -19,15 +31,15 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-    outline: none;
+  outline: none;
 }
 
 p,
@@ -37,5 +49,5 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }

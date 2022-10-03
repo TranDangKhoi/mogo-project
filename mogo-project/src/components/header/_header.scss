@@ -1,0 +1,232 @@
+@import "../../helper/variable";
+
+.header {
+  min-height: 100rem;
+  background: linear-gradient(
+      to bottom,
+      rgba($primary-color, 0.8),
+      rgba($secondary-color, 0.8)
+    ),
+    url("../../assets/img-header-bg.jpg") no-repeat center / cover;
+  color: white;
+
+  &-logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  &-menu-link {
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 190ms ease-in-out;
+  }
+
+  &-menu-icon {
+    transition: all 190ms ease-in-out;
+  }
+  &-menu-icon:hover {
+    color: $secondary-color;
+  }
+  &-top {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &-menu {
+    display: flex;
+  }
+
+  &-content {
+    padding-top: 17rem;
+    text-align: center;
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+
+  &-content-caption {
+    font-size: 7.2rem;
+    font-family: $tertiary-font;
+  }
+
+  &-content-main {
+    font-size: 15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 7rem;
+    margin-bottom: 5rem;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 6rem;
+      height: 5px;
+      background: white;
+      transform: translateX(-50%);
+    }
+  }
+  &-content-more {
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem 3rem;
+    border: 4px solid white;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 150ms ease-in-out;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+  &-bottom {
+    margin-top: 15.5rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+
+    &-item {
+      width: calc(25% - 3rem);
+      padding-top: 2.5rem;
+      border-top: 4px solid white;
+      opacity: 0.6;
+      transition: all 150ms ease-in-out;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 20%;
+        background: $primary-color;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &-item.is-active {
+      opacity: 1;
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &-number {
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin-right: 1rem;
+    }
+    &-text {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+  }
+  &-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    &-menu-item:not(:first-child) {
+      margin-left: 50px;
+    }
+    &-menu-link {
+      color: white;
+      display: inline-block;
+      padding-bottom: 0.6rem;
+      border-bottom: 4px solid transparent;
+    }
+    &-menu-icon {
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    min-height: unset;
+    .header-bottom {
+      margin-top: 10.5rem;
+    }
+    .header-content {
+      padding-top: 10rem;
+    }
+    .header-content-main {
+      font-size: 10rem;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    .header-bottom-number {
+      display: none;
+    }
+    .header-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: white;
+      width: 290px;
+      display: block;
+      padding: 2rem 2.5rem;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: transform 0.25s ease-in;
+      &.is-expand {
+        transform: translateX(0);
+      }
+    }
+    .header-menu-item {
+      margin-bottom: 1rem;
+    }
+    .header-menu-link {
+      color: $title-color;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      &:hover {
+        background: $secondary-color;
+        color: white;
+      }
+    }
+    .header-menu-icon {
+      color: $title-color;
+      display: block;
+      padding: 15px;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    .header-content {
+      padding-top: 7rem;
+    }
+    .header-content-caption {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .header-content-main {
+      font-size: 5rem;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+    }
+    .header-bottom-text {
+      font-size: 1rem;
+    }
+    .header-toggle {
+      display: block;
+      align-self: center;
+    }
+  }
+}

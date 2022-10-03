@@ -1,12 +1,16 @@
 import "./App.scss";
-
+import Header from "./components/header/Header";
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/homepage/Homepage";
 function App() {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure fuga
-      blanditiis sint, deserunt doloribus? Animi veniam atque, possimus facere
-      cum eligendi nihil. Eos, voluptate rem sunt aut ducimus commodi.
-    </div>
+    <>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Homepage></Homepage>}></Route>
+        <Route path="/*" element={<>Not found</>}></Route>
+      </Routes>
+    </>
   );
 }
 
