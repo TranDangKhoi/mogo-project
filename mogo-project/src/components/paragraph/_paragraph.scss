@@ -8,12 +8,12 @@
 
   &-caption {
     font-family: $tertiary-font;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
   &-title {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.1rem;
+    font-weight: 500;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     margin-bottom: 3.5rem;
@@ -23,15 +23,34 @@
       bottom: 0;
       @include absoluteCenter(horizontal);
       @include bg($primary-color);
-      width: 10%;
+      width: 14%;
       height: 4px;
     }
   }
   &-desc {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: $secondary-font;
     line-height: 1.4;
     color: $text-color;
     font-weight: 300;
+  }
+  @include maxWidth(1023px) {
+    &-caption {
+      font-size: 2.2rem;
+    }
+    &-title {
+      font-size: 2.6rem;
+      padding-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    &-desc {
+      font-size: 1.3rem;
+    }
+  }
+}
+@include maxWidth(1023px) {
+  .paragraph {
+    padding-top: 5.3rem;
+    padding-bottom: 6.5rem;
   }
 }

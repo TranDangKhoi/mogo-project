@@ -138,7 +138,7 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 768px) {
+  @include minWidth(768px) {
     &-menu-item:not(:first-child) {
       margin-left: 50px;
     }
@@ -157,7 +157,7 @@
     }
   }
 
-  @media screen and (max-width: 1023.98px) {
+  @include maxWidth(1023px) {
     min-height: unset;
     .header-bottom {
       margin-top: 10.5rem;
@@ -170,7 +170,7 @@
     }
   }
 
-  @media screen and (max-width: 767.98px) {
+  @include maxWidth(767.98px) {
     .header-bottom-number {
       display: none;
     }
