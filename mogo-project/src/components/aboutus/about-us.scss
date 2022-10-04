@@ -63,10 +63,14 @@
   }
   @include maxWidth(767px) {
     &-list {
-      grid-template-columns: 100%;
+      grid-template-columns: unset;
+      grid-auto-flow: column;
+      grid-auto-columns: 60%;
       column-gap: 0px;
       row-gap: 3rem;
       justify-items: center;
+      overflow-x: auto;
+      @include hideScroll();
     }
     &-item {
       width: 90%;

@@ -56,3 +56,12 @@
   flex-direction: $direction;
   flex-wrap: $wrap;
 }
+
+// Hide Scroll
+@mixin hideScroll() {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
