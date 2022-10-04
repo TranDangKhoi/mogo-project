@@ -1,4 +1,5 @@
 import React from "react";
+import AboutUs from "../../components/aboutus/AboutUs";
 import Container from "../../components/container/Container";
 import Paragraph from "../../components/paragraph/Paragraph";
 
@@ -11,6 +12,7 @@ const Homepage = () => {
         libero quaerat amet! Aspernatur, doloribus. Minus placeat itaque,
         obcaecati corrupti maxime accusantium autem!
       </Paragraph>
+      <AboutUs></AboutUs>
     </Container>
   );
 };

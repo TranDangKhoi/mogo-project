@@ -5,8 +5,7 @@
 
 @mixin absoluteCenter($direction: "horizontal") {
   position: absolute;
-  // @if $variable === "argument"
-  @if $direction == "horizontal-vertical" {
+  @if $direction == "both" {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
