@@ -106,12 +106,15 @@
     // scroll-snap-type là một css property để set các snap point, hay nói cách khác là để điều khiển hoạt dộng scroll, giới hạn người dùng scroll chỉ đến một phần nào đó
     // x mandatory là gì?
     // x: áp dụng scroll-snap-type này cho chiều scroll ngang
-    // mandatory: Khi các bạn scroll thì sẽ không có chuyện dừng lưng chừng ở giữa 2 bức ảnh, VÍ DỤ bạn lật sang trang mới của cuốn sách, không có chuyện bạn lật được 1 nửa rồi giữ nguyên được nó ở đó, tờ giấy sẽ nghiêng về 1 trong 2 bên, nghiêng về bên nào thì sẽ lật về phía ngược lại
-    scroll-snap-stop: always;
+    // mandatory: Khi các bạn scroll thì sẽ không có chuyện dừng lưng chừng ở giữa 2 bức ảnh, VÍ DỤ bạn lật sang trang mới của cuốn sách, không có chuyện bạn lật được 1 nửa rồi giữ nguyên được nó ở đó, tờ giấy sẽ nghiêng về 1 trong 2 bên, nghiêng về bên nào thì sẽ lật về phía đó (xem thêm ở ảnh bên dưới)
+    scroll-snap-stop: always; // Dừng scroll khi đạt đến 1 snap point nào đó sau snap point trước đó
   }
   .about-item {
     width: 90%;
-    scroll-snap-align: start;
+    scroll-snap-align: start; // Snap point bắt đầu là thg đầu tiên
   }
 }
 ```
+
+- Ảnh giải thích scroll-snap-type:
+  ![scroll-snap-type explanation](https://discloud-storage.herokuapp.com/file/bfaad728fd28882da02502222a3bf2d0/bookturning.png)
