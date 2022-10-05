@@ -65,3 +65,16 @@
     display: none;
   }
 }
+
+// Text Clamp
+@mixin textClamp($row: 1, $size: 100%) {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $row;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: $size;
+  max-width: $size;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

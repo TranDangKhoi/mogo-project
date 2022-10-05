@@ -5,16 +5,19 @@ export const AboutUsData = [
   {
     id: 1,
     src: AboutUs1,
-    content: "Super Team",
+    icon: "fa-solid fa-bolt about-icon",
+    content: "Energetic",
   },
   {
     id: 2,
     src: AboutUs2,
-    content: "Super Team",
+    icon: "fa-solid fa-heart about-icon",
+    content: "Joy",
   },
   {
     id: 3,
     src: AboutUs3,
-    content: "Super Team",
+    icon: "fa-brands fa-pagelines about-icon",
+    content: "Environmental",
   },
 ];

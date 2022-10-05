@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "../container/Container";
 import "./_paragraph.scss";
 const Paragraph = ({ caption, title, children }) => {
   return (

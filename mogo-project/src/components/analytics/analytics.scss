@@ -1,0 +1,54 @@
+@import "../../helper/styles";
+.analytics {
+  background: $tertiary-color;
+  &-list {
+    @include flexbox(center, space-between);
+  }
+  &-item {
+    padding: 3.5rem;
+    color: white;
+    border-left: 1px solid rgba(white, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+    width: 20%;
+    &:last-child {
+      border-right: 1px solid rgba(white, 0.4);
+    }
+  }
+
+  &-item-count {
+    font-size: 7.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &-item-text {
+    line-height: 1.4;
+    font-size: 1.5rem;
+  }
+  @include maxWidth(1023px) {
+    &-item {
+      padding: 1.5rem;
+    }
+    &-item-count {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+    &-item-text {
+      font-size: 1.4rem;
+    }
+  }
+  @include maxWidth(767px) {
+    &-list {
+      display: block;
+    }
+    &-item {
+      width: 100%;
+      padding: 2.5rem 1.5rem;
+      border-bottom: 1px solid rgba(white, 0.4);
+      &:not(:nth-child(999)) {
+        border-left: unset;
+        border-right: unset;
+      }
+    }
+  }
+}

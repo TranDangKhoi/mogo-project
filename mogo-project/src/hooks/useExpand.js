@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useExpandNavigation(dom = "button", initialState) {
+export function useExpand(dom = "button", initialState) {
   const nodeRef = useRef(null);
   const [expandNavigation, setExpandNavigation] = useState(initialState);
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useExpandNavigation } from "../../hooks/useExpandNavigation";
+import { useExpand } from "../../hooks/useExpand";
 import "./_header.scss";
 import "./HeaderData";
 import { HeaderTopData, HeaderBottomData } from "./HeaderData";
@@ -20,8 +20,10 @@ const Header = () => {
 };
 
 const HeaderTop = () => {
-  const { expandNavigation, nodeRef, setExpandNavigation } =
-    useExpandNavigation("i.header-toggle", false);
+  const { expandNavigation, nodeRef, setExpandNavigation } = useExpand(
+    "i.header-toggle",
+    false
+  );
   return (
     <div className="header-top">
       <Link to={"/"} className="header-logo">

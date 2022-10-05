@@ -10,7 +10,7 @@ const AboutUs = () => {
           <div className="about-item" key={item.id}>
             <img src={item.src} alt="" className="about-img" />
             <div className="about-content">
-              <i className="fa-solid fa-users about-icon"></i>
+              <i className={item.icon}></i>
               <span className="about-title">{item.content}</span>
             </div>
           </div>
