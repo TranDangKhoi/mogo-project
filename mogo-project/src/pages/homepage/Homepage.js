@@ -3,6 +3,7 @@ import AboutUs from "../../components/aboutus/AboutUs";
 import Analytics from "../../components/analytics/Analytics";
 import Container from "../../components/container/Container";
 import Paragraph from "../../components/paragraph/Paragraph";
+import Services from "../../components/services/Services";
 
 const Homepage = () => {
   return (
@@ -17,6 +18,13 @@ const Homepage = () => {
         <AboutUs></AboutUs>
       </Container>
       <Analytics></Analytics>
+      <Container>
+        <Paragraph
+          caption={"We work with"}
+          title={"Amazing Services"}
+        ></Paragraph>
+        <Services></Services>
+      </Container>
     </>
   );
 };

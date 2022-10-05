@@ -8,9 +8,9 @@ const AboutUs = () => {
       {AboutUsData.length > 0 &&
         AboutUsData.map((item) => (
           <div className="about-item" key={item.id}>
-            <img src={item.src} alt="" className="about-img" />
+            <img src={item.src} alt="Images" className="about-img" />
             <div className="about-content">
-              <i className={item.icon}></i>
+              <i className={`${item.icon} about-icon`}></i>
               <span className="about-title">{item.content}</span>
             </div>
           </div>
