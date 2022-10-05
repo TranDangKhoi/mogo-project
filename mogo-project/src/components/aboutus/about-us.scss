@@ -66,14 +66,17 @@
       grid-template-columns: unset;
       grid-auto-flow: column;
       grid-auto-columns: 60%;
-      column-gap: 0px;
-      row-gap: 3rem;
+      column-gap: unset;
       justify-items: center;
       overflow-x: auto;
       @include hideScroll();
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
     }
     &-item {
       width: 90%;
+      scroll-snap-align: start;
     }
   }
 }
