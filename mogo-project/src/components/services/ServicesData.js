@@ -8,7 +8,7 @@ export const ServicesData = [
   },
   {
     id: 2,
-    icon: "fa-regular fa-camera-retro",
+    icon: "fa-solid fa-palette",
     title: "Web design",
     description:
       "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
@@ -31,14 +31,14 @@ export const ServicesData = [
     id: 5,
     icon: "fa-solid fa-code",
     title: "CSS/HTML",
-    content:
+    description:
       "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
   {
     id: 6,
-    icon: "fa-solid fa-tachograph-digital",
+    icon: "fa-solid fa-print",
     title: "Digital",
-    content:
+    description:
       "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
   },
 ];

@@ -1,1 +1,26 @@
 @import "../../helper/styles";
+
+.service {
+  padding: 9rem 0 11rem; // top:11rem right-left:0 bottom:12rem
+  background: white;
+  &-list {
+    @include flexbox(center, space-between, row, wrap);
+    column-gap: 4rem;
+  }
+  &-item {
+    width: calc((100% / 3) - 4rem);
+    @include flexbox();
+    column-gap: 3rem;
+  }
+
+  &-item-icon {
+    width: calc(15% - 3rem);
+    color: $tertiary-color;
+    i {
+      font-size: 2.3rem;
+    }
+  }
+  &-item-info {
+    width: calc(85% - 3rem);
+  }
+}
