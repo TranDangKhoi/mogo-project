@@ -9,4 +9,16 @@
     @include relativeCenter(horizontal);
     display: inline-block;
   }
+  @include maxWidth(767px) {
+    margin-top: 5rem;
+    &-image {
+      margin-bottom: -4.6rem;
+      max-width: 80%;
+    }
+  }
+  @include maxWidth(413px) {
+    &-image {
+      margin-bottom: -4.2rem;
+    }
+  }
 }
