@@ -1,0 +1,12 @@
+@import "../../helper/styles";
+
+.accordion {
+  &-content {
+    height: 0;
+    overflow-y: hidden;
+  }
+  &-content.is-expand {
+    height: auto;
+    overflow-y: scroll;
+  }
+}

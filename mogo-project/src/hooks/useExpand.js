@@ -1,11 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useExpand(dom = "button", initialState) {
+export function useExpand(
+  dom = "button",
+  initialState,
+  closeOnOutsideClick = true
+) {
   const nodeRef = useRef(null);
   const [expandNavigation, setExpandNavigation] = useState(initialState);
   useEffect(() => {
     function handleExpandNavigation(e) {
       if (
+        closeOnOutsideClick &&
         nodeRef &&
         !nodeRef.current.contains(e.target) &&
         !e.target.matches(dom)
@@ -17,7 +22,7 @@ export function useExpand(dom = "button", initialState) {
     return () => {
       document.removeEventListener("click", handleExpandNavigation);
     };
-  }, [dom]);
+  }, [closeOnOutsideClick, dom]);
   return {
     expandNavigation,
     setExpandNavigation,
