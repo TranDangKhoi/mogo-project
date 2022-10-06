@@ -2,7 +2,22 @@
   width: $width;
   height: $height;
 }
-
+@mixin relativeCenter($direction: "horizontal") {
+  position: relative;
+  @if $direction == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $direction == "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $direction == "horizontal" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 @mixin absoluteCenter($direction: "horizontal") {
   position: absolute;
   @if $direction == "both" {
@@ -76,5 +91,5 @@
   width: $size;
   max-width: $size;
   white-space: pre-wrap;
-  word-break: break-word;
+  word-break: break-all;
 }

@@ -1,0 +1,12 @@
+@import "../../helper/styles";
+
+.device {
+  margin-top: 10rem;
+  background: linear-gradient(to bottom, rgba(#ccc, 0.7), rgba(white, 0.7)),
+    url("../../assets/img-device-bg.png") no-repeat center / cover;
+  &-image {
+    margin: 0 auto -9.3rem;
+    @include relativeCenter(horizontal);
+    display: inline-block;
+  }
+}

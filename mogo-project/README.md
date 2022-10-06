@@ -106,3 +106,32 @@
 
 - Ảnh giải thích scroll-snap-type:
   ![scroll-snap-type explanation](https://discloud-storage.herokuapp.com/file/bfaad728fd28882da02502222a3bf2d0/bookturning.png)
+
+# Margin Collapse là gì?
+
+- Margin Collapse là trường hợp khi margin của phần từ này đè lấn lên giá trị margin của phần tử kia. Ví dụ nho nhỏ như sau:
+
+```html
+<div class="container">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+</div>
+```
+
+```css
+.container {
+  background: #ccc;
+  width: 200px;
+  margin-top: 30px;
+}
+.square {
+  margin: 10px;
+  height: 50px;
+  background: #f0f;
+}
+```
+
+- Như ở ví dụ trên nhiều bạn sẽ nghĩ rằng khoảng cách giữa các phần tử .square sẽ là _20px_ do ta có margin: _10px_ . Nhưng không phải vậy khoảng cách giữa 2 phần từ đó chỉ là _10px_. Đó chính là margin collapsing.
+
+- Vậy thì vẫn khó hiểu nhỉ? Về cơ bản, khi 2 phần từ gần nhau cùng có margin nó sẽ lấy giá trị margin lớn nhất của 1 trong hai phẩn từ, chứ không phải là tổng margin của 2 phẩn tử. Margin collapsing chỉ xảy ra với margin-top và margin bottom
