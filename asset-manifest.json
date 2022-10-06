@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/Mogo-Project/static/css/main.3df382fd.css",
-    "main.js": "/Mogo-Project/static/js/main.129279b0.js",
+    "main.css": "/Mogo-Project/static/css/main.449f4780.css",
+    "main.js": "/Mogo-Project/static/js/main.bb80302f.js",
     "static/js/787.3c0fa1cb.chunk.js": "/Mogo-Project/static/js/787.3c0fa1cb.chunk.js",
+    "static/media/img-device-bg.png": "/Mogo-Project/static/media/img-device-bg.36222dd2c8bbdd281050.png",
     "static/media/img-header-bg.jpg": "/Mogo-Project/static/media/img-header-bg.ee7deb01dfc708bcb392.jpg",
+    "static/media/img-devices.png": "/Mogo-Project/static/media/img-devices.e37cfc012c54636a88b7.png",
     "static/media/img-about1.png": "/Mogo-Project/static/media/img-about1.cfc0658a4b90d34547db.png",
     "static/media/img-about2.png": "/Mogo-Project/static/media/img-about2.45d2e81258ce984ffad1.png",
     "static/media/img-about3.png": "/Mogo-Project/static/media/img-about3.bd02973332c7186ccd64.png",
     "index.html": "/Mogo-Project/index.html",
-    "main.3df382fd.css.map": "/Mogo-Project/static/css/main.3df382fd.css.map",
-    "main.129279b0.js.map": "/Mogo-Project/static/js/main.129279b0.js.map",
+    "main.449f4780.css.map": "/Mogo-Project/static/css/main.449f4780.css.map",
+    "main.bb80302f.js.map": "/Mogo-Project/static/js/main.bb80302f.js.map",
     "787.3c0fa1cb.chunk.js.map": "/Mogo-Project/static/js/787.3c0fa1cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3df382fd.css",
-    "static/js/main.129279b0.js"
+    "static/css/main.449f4780.css",
+    "static/js/main.bb80302f.js"
   ]
 }
