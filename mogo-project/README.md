@@ -135,3 +135,23 @@
 - Như ở ví dụ trên nhiều bạn sẽ nghĩ rằng khoảng cách giữa các phần tử .square sẽ là _20px_ do ta có margin: _10px_ . Nhưng không phải vậy khoảng cách giữa 2 phần từ đó chỉ là _10px_. Đó chính là margin collapsing.
 
 - Vậy thì vẫn khó hiểu nhỉ? Về cơ bản, khi 2 phần từ gần nhau cùng có margin nó sẽ lấy giá trị margin lớn nhất của 1 trong hai phẩn từ, chứ không phải là tổng margin của 2 phẩn tử. Margin collapsing chỉ xảy ra với margin-top và margin bottom
+
+# CSS cho scrollbar
+
+- Khi thiết kế website, hầu hết các website đẹp đều sẽ có 1 cái custom scrollbar ở bất kì chỗ nào, nên giờ mình sẽ tìm hiểu cách css cho scrollbar:
+
+```scss
+.something::-webkit-scrollbar {
+  width: 10px; // set width cho scrollbar
+}
+
+.something::-webkit-scrollbar-track {
+  background: #f1f1f1; // set background cho scrollbar track (các phần có màu ghi chưa được kéo tới)
+}
+
+.something::-webkit-scrollbar-thumb {
+  background: #888; // setback ground cho chính thanh scrollbar
+}
+```
+
+- ĐÓ, vậy là chỉ với 3 selector ta đã có thể custom scrollbar theo ý thích của mình

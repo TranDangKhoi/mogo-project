@@ -5,13 +5,14 @@ import "./accordion.scss";
 const Accordion = ({
   faiconClassName,
   ionicIconName,
+  openedByDefault,
   icon,
   title,
   children,
 }) => {
   const { expandNavigation, nodeRef, setExpandNavigation } = useExpand(
     "h3.accordion-header",
-    false
+    openedByDefault ? true : false
   );
   return (
     <div className="accordion" ref={nodeRef}>
@@ -26,14 +27,14 @@ const Accordion = ({
         <h3 className="accordion-title">{title}</h3>
         <i
           className={`fa-solid ${
-            expandNavigation ? "fa-caret-down" : "fa-caret-up"
-          }`}
+            expandNavigation ? "fa-angle-down" : "fa-angle-up"
+          } accordion-caret`}
         ></i>
       </div>
       <div
         className={`${expandNavigation ? "is-expand" : null} accordion-content`}
       >
-        {children}
+        <div className="accordion-text">{children}</div>
       </div>
     </div>
   );

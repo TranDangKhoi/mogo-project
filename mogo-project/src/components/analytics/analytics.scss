@@ -2,7 +2,7 @@
 .analytics {
   background: $tertiary-color;
   &-list {
-    @include flexbox(center, space-between);
+    @include flexbox(flex-start, space-between);
   }
   &-item {
     padding: 3.5rem;

@@ -1,12 +1,49 @@
 @import "../../helper/styles";
 
 .accordion {
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+  &-header {
+    padding: 1.5rem;
+    border: 1px solid rgba($gray-dark-color, 0.5);
+    @include flexbox(center);
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+  }
   &-content {
-    height: 0;
-    overflow-y: hidden;
+    font-family: $secondary-font;
+    color: $text-color;
+    line-height: 1.4;
+    font-size: 1.5rem;
+    border-top: 0;
+    border: 1px solid rgba($gray-dark-color, 0.5);
+    font-weight: 300;
+    font-style: italic;
+    .accordion-text {
+      height: 0;
+      overflow-y: hidden;
+    }
   }
   &-content.is-expand {
-    height: auto;
-    overflow-y: scroll;
+    padding: 2rem;
+
+    .accordion-text {
+      padding-right: 2rem;
+      height: 15.3rem;
+      overflow-y: auto;
+      @include customScrollbar(4px, 3rem, 1.2rem, $gray-color, $tertiary-color);
+    }
+  }
+  &-icon {
+    color: $tertiary-color;
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+  }
+  &-caret {
+    margin-left: auto;
+    font-size: 2rem;
+    color: $gray-dark-color;
   }
 }

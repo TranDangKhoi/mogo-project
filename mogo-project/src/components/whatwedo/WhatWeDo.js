@@ -13,22 +13,50 @@ const WhatWeDo = () => {
           eveniet unde at quasi, cum suscipit fuga voluptates. Cum iusto,
           laboriosam culpa, vel debitis sequi nobis vero repellendus dignissimos
           maxime dicta?
-          <div className="wedo-wrapper">
-            <img src={WhatWeDoImage} alt="WeDoImage" />
-            <div className="wedo-content">
-              <Accordion
-                title={"Photography"}
-                faiconClassName="fa-solid fa-camera-retro"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea
-              </Accordion>
-              <Accordion></Accordion>
-            </div>
-          </div>
         </Paragraph>
+        <div className="wedo-wrapper">
+          <img src={WhatWeDoImage} alt="WeDoImage" className="wedo-img" />
+          <div className="wedo-content">
+            <Accordion
+              title={"Photography"}
+              faiconClassName="fa-solid fa-camera-retro"
+              openedByDefault={true}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea
+            </Accordion>
+            <Accordion title={"Creativity"} faiconClassName="fa-solid fa-brush">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea
+            </Accordion>
+            <Accordion
+              title={"Web Design"}
+              faiconClassName="fa-solid fa-palette"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea
+            </Accordion>
+          </div>
+        </div>
       </Container>
     </div>
   );

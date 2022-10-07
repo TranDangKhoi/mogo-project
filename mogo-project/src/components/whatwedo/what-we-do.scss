@@ -1,4 +1,27 @@
 @import "../../helper/styles";
 
 .wedo {
+  &-img {
+    object-fit: cover;
+  }
+  @include minWidth(1280px) {
+    &-wrapper {
+      @include flexbox(stretch, space-between);
+      column-gap: 3rem;
+    }
+    &-img,
+    &-content {
+      width: calc((100% / 2) - 1.5rem);
+    }
+  }
+  @include maxWidth(1279px) {
+    &-wrapper {
+      @include flexbox(center, space-between, column, wrap);
+      row-gap: 2rem;
+    }
+    &-img,
+    &-content {
+      width: 100%;
+    }
+  }
 }

@@ -93,3 +93,24 @@
   white-space: pre-wrap;
   word-break: break-all;
 }
+
+// custom scrollbar
+@mixin customScrollbar(
+  $scrollbarWidth: 3px,
+  $scrollbarBorderRadius: 1px,
+  $trackBorderRadius: 1px,
+  $trackBackground: #ccc,
+  $scrollBarColor: #ccc
+) {
+  &::-webkit-scrollbar {
+    width: $scrollbarWidth;
+  }
+  &::-webkit-scrollbar-track {
+    background: $trackBackground;
+    border-radius: $trackBorderRadius;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $scrollBarColor;
+    border-radius: $scrollbarBorderRadius;
+  }
+}
