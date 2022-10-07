@@ -156,4 +156,4 @@
 
 - ĐÓ, vậy là chỉ với 3 selector ta đã có thể custom scrollbar theo ý thích của mình
 
-- Ngoài ra bạn cũng có thể làm đẹp hơn bằng thuộc tính `border-radius`
+- Ngoài ra bạn cũng có thể làm đẹp hơn bằng thuộc tính `border-radius` cho scrollbar-track và thumb, ngoài ra còn 2 pseudo khác của scrollbar là scrollbar-button và scrollbar-corner nữa, nhưng ta sẽ tìm hiểu sau nhé
