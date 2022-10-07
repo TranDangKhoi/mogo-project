@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Mogo-Project/static/css/main.dd88c726.css",
+    "main.css": "/Mogo-Project/static/css/main.83c8afea.css",
     "main.js": "/Mogo-Project/static/js/main.de1e2c3b.js",
     "static/js/787.3c0fa1cb.chunk.js": "/Mogo-Project/static/js/787.3c0fa1cb.chunk.js",
     "static/media/img-device-bg.png": "/Mogo-Project/static/media/img-device-bg.36222dd2c8bbdd281050.png",
@@ -11,12 +11,12 @@
     "static/media/img-about2.png": "/Mogo-Project/static/media/img-about2.45d2e81258ce984ffad1.png",
     "static/media/img-about3.png": "/Mogo-Project/static/media/img-about3.bd02973332c7186ccd64.png",
     "index.html": "/Mogo-Project/index.html",
-    "main.dd88c726.css.map": "/Mogo-Project/static/css/main.dd88c726.css.map",
+    "main.83c8afea.css.map": "/Mogo-Project/static/css/main.83c8afea.css.map",
     "main.de1e2c3b.js.map": "/Mogo-Project/static/js/main.de1e2c3b.js.map",
     "787.3c0fa1cb.chunk.js.map": "/Mogo-Project/static/js/787.3c0fa1cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd88c726.css",
+    "static/css/main.83c8afea.css",
     "static/js/main.de1e2c3b.js"
   ]
 }
