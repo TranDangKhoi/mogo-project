@@ -1,0 +1,64 @@
+@import "../../helper/styles";
+
+.team {
+  margin-top: 3rem;
+  &-list {
+    @include flexbox(center, space-between);
+    column-gap: 3rem;
+  }
+  &-main {
+    position: relative;
+    @include cardHoverEffect();
+    @include flexbox(center, flex-start, column);
+  }
+  &-info {
+    margin-top: 2rem;
+    > * {
+      display: block;
+      text-align: center;
+    }
+  }
+  &-item {
+    cursor: pointer;
+  }
+  &-name {
+    color: $title-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
+  &-job {
+    color: $text-color;
+    margin-top: 1rem;
+    transform: skew(-8deg);
+  }
+  &-social {
+    @include absoluteCenter(both);
+    @include linearGradientOverlay();
+    @include size(100%);
+    @include flexbox(center, center);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+    z-index: 2;
+    &-list {
+      @include flexbox(center);
+    }
+    &-item {
+      padding: 2rem;
+      background: $secondary-color;
+      transition: all 100ms ease-in-out;
+      i {
+        color: $primary-color;
+        font-size: 2rem;
+      }
+      &:hover {
+        background: $primary-color;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+}

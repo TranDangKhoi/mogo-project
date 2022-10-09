@@ -7,6 +7,7 @@ import Quote from "../../components/quote/Quote";
 import Services from "../../components/services/Services";
 import WhatWeDo from "../../components/whatwedo/WhatWeDo";
 import quoteImage from "../../assets/img-quote.png";
+import Team from "../../components/team/Team";
 const Homepage = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Homepage = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis neque accusantium repellat dolor, voluptates ametquasi iure excepturi natus recusandae facere sint expeditacorrupti, necessitatibus labore non sunt voluptate animi."
         }
       ></Quote>
+      <Team></Team>
     </>
   );
 };
