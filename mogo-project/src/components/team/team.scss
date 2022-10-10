@@ -35,7 +35,7 @@
   }
   &-social {
     @include absoluteCenter(both);
-    @include linearGradientOverlay();
+    @include linearGradientOverlay(0.8);
     @include size(100%);
     @include flexbox(center, center);
     opacity: 0;
@@ -59,6 +59,25 @@
           color: white;
         }
       }
+    }
+  }
+  @include maxWidth(1023px) {
+    &-social {
+      &-item {
+        padding: 1.5rem;
+        background: $secondary-color;
+        transition: all 100ms ease-in-out;
+        i {
+          color: $primary-color;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  @include maxWidth(767px) {
+    &-list {
+      display: grid;
+      @include touchScreenSlider();
     }
   }
 }

@@ -136,14 +136,35 @@
 }
 // linear gradient overlay
 @mixin linearGradientOverlay(
+  $opacity: 0.7,
   $direction: to bottom,
   $firstColor: $primary-color,
-  $secondColor: $secondary-color,
-  $opacity: 0.7
+  $secondColor: $secondary-color
 ) {
   background: linear-gradient(
     $direction,
     rgba($firstColor, $opacity),
     rgba($secondColor, $opacity)
   );
+}
+
+// Touch Screen Slider
+
+@mixin touchScreenSlider(
+  $columnWidth: 88%,
+  $columnGap: 2rem,
+  $scrollSnapAlign: start
+) {
+  justify-items: center;
+  grid-template-columns: unset;
+  grid-auto-flow: column;
+  grid-auto-columns: $columnWidth;
+  column-gap: $columnGap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  & > * {
+    width: auto;
+    scroll-snap-align: $scrollSnapAlign;
+  }
 }

@@ -3,7 +3,7 @@
 .quote {
   background: $gray-color;
   padding: 2rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
   &-container {
     @include flexbox(center, space-between);
     column-gap: 3rem;

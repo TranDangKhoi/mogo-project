@@ -50,20 +50,9 @@
   }
   @include maxWidth(767px) {
     &-list {
-      grid-template-columns: unset;
-      grid-auto-flow: column;
-      grid-auto-columns: 92%;
-      column-gap: unset;
-      justify-items: center;
-      overflow-x: auto;
-      @include hideScroll();
       padding: 1rem;
-      scroll-snap-type: x mandatory;
-      scroll-snap-stop: always;
-    }
-    &-item {
-      width: 92%;
-      scroll-snap-align: start;
+      @include hideScroll();
+      @include touchScreenSlider();
     }
   }
 }

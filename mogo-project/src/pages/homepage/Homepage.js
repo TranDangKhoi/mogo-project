@@ -1,13 +1,14 @@
 import React from "react";
 import AboutUs from "../../components/aboutus/AboutUs";
 import Analytics from "../../components/analytics/Analytics";
-import Container from "../../components/container/Container";
 import Device from "../../components/device/Device";
 import Quote from "../../components/quote/Quote";
 import Services from "../../components/services/Services";
 import WhatWeDo from "../../components/whatwedo/WhatWeDo";
 import quoteImage from "../../assets/img-quote.png";
 import Team from "../../components/team/Team";
+import Brand from "../../components/brand/Brand";
+import BrandLogos from "../../assets/img-logos.png";
 const Homepage = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Homepage = () => {
         }
       ></Quote>
       <Team></Team>
+      <Brand>{[BrandLogos]}</Brand>
     </>
   );
 };

@@ -1,0 +1,11 @@
+@import "../../helper/styles";
+
+.brand {
+  margin-top: 10rem;
+  padding: 4rem;
+  background: $gray-color;
+  @include flexbox(center, space-between);
+  @include maxWidth(767px) {
+    padding: 3rem 0;
+  }
+}
