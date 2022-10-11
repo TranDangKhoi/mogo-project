@@ -46,11 +46,15 @@
   position: absolute;
   left: $left;
   top: $top;
+  bottom: unset;
+  right: unset;
 }
 @mixin absoluteBottomLeft($bottom: 0, $left: 0) {
   position: absolute;
   left: $left;
   bottom: $bottom;
+  top: unset;
+  right: unset;
 }
 
 @mixin bg($color: red) {

@@ -67,9 +67,7 @@
       margin-bottom: 4rem;
     }
     &-date {
-      top: 1rem;
-      left: 1rem;
-      bottom: unset;
+      @include absoluteTopLeft(1rem, 1rem);
       transform: unset;
       padding: 1.5rem;
     }
