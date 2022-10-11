@@ -151,20 +151,36 @@
 // Touch Screen Slider
 
 @mixin touchScreenSlider(
-  $columnWidth: 88%,
-  $columnGap: 2rem,
+  $columnWidth: 30rem,
+  $itemWidth: 88%,
   $scrollSnapAlign: start
 ) {
   justify-items: center;
   grid-template-columns: unset;
   grid-auto-flow: column;
   grid-auto-columns: $columnWidth;
-  column-gap: $columnGap;
+  column-gap: unset;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
   & > * {
-    width: auto;
+    width: $itemWidth;
     scroll-snap-align: $scrollSnapAlign;
   }
+}
+
+// linearGradientWithBgImage
+@mixin linearGradientWithBgImg(
+  $imgUrl: "../../assets/img-device-bg.png",
+  $direction: to bottom,
+  $firstColor: #ccc,
+  $secondColor: white,
+  $opacity: 0.7
+) {
+  background: linear-gradient(
+      $direction,
+      rgba($firstColor, $opacity),
+      rgba($secondColor, $opacity)
+    ),
+    url($imgUrl) no-repeat center / cover;
 }

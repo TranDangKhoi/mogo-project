@@ -78,6 +78,7 @@
     &-list {
       display: grid;
       @include touchScreenSlider();
+      @include hideScroll();
     }
   }
 }

@@ -1,0 +1,63 @@
+@import "../../helper/styles";
+
+.feedback {
+  padding: 6rem 0;
+  @include linearGradientWithBgImg("../../assets/img-people-bg.png");
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 6rem;
+    row-gap: 7rem;
+  }
+  &-item {
+    @include flexbox(flex-start, space-between);
+    column-gap: 1.5rem;
+  }
+  &-img {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+  }
+  &-info {
+    @include flexbox(stretch, flex-start, column);
+  }
+  &-name {
+    font-weight: 700;
+  }
+  &-job {
+    color: $title-color;
+    transform: skew(-8deg);
+    position: relative;
+    margin-top: 0.7rem;
+    padding-bottom: 1.3rem;
+    margin-bottom: 1.3rem;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 7rem;
+      height: 3px;
+      background: $primary-color;
+    }
+  }
+  &-feedback {
+    color: $title-color;
+    line-height: 1.4;
+    @include textClamp(3);
+  }
+  @include maxWidth(767px) {
+    &-list {
+      display: block;
+      width: 100%;
+    }
+    &-item:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    &-img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
