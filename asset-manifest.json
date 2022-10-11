@@ -1,25 +1,39 @@
 {
   "files": {
-    "main.css": "/Mogo-Project/static/css/main.57a519a6.css",
-    "main.js": "/Mogo-Project/static/js/main.fa54676d.js",
+    "main.css": "/Mogo-Project/static/css/main.c4c2079f.css",
+    "main.js": "/Mogo-Project/static/js/main.fff33975.js",
     "static/js/787.3c0fa1cb.chunk.js": "/Mogo-Project/static/js/787.3c0fa1cb.chunk.js",
+    "static/media/img-people-bg.png": "/Mogo-Project/static/media/img-people-bg.b62ab8544f2e911673f9.png",
     "static/media/img-device-bg.png": "/Mogo-Project/static/media/img-device-bg.36222dd2c8bbdd281050.png",
     "static/media/img-header-bg.jpg": "/Mogo-Project/static/media/img-header-bg.ee7deb01dfc708bcb392.jpg",
+    "static/media/img-work7.png": "/Mogo-Project/static/media/img-work7.380f352b40f32a6e5dd1.png",
+    "static/media/img-work5.png": "/Mogo-Project/static/media/img-work5.24c3146b13da2fea9b74.png",
+    "static/media/img-work4.png": "/Mogo-Project/static/media/img-work4.045c0ce542c1b4a57aa3.png",
+    "static/media/img-work2.png": "/Mogo-Project/static/media/img-work2.6d6552f021c36ba97b22.png",
     "static/media/img-wedo.png": "/Mogo-Project/static/media/img-wedo.565af692512dbd197839.png",
     "static/media/img-team2.png": "/Mogo-Project/static/media/img-team2.333b28d493d8008d5ee1.png",
+    "static/media/img-work3.png": "/Mogo-Project/static/media/img-work3.8e9912859518d1834a74.png",
     "static/media/img-team1.png": "/Mogo-Project/static/media/img-team1.06b45219c7111905d70a.png",
+    "static/media/img-work1.png": "/Mogo-Project/static/media/img-work1.78304e64e1baeaf63dd0.png",
     "static/media/img-team3.png": "/Mogo-Project/static/media/img-team3.0e7a9f63f8310c130f66.png",
     "static/media/img-devices.png": "/Mogo-Project/static/media/img-devices.e37cfc012c54636a88b7.png",
     "static/media/img-about1.png": "/Mogo-Project/static/media/img-about1.cfc0658a4b90d34547db.png",
     "static/media/img-about2.png": "/Mogo-Project/static/media/img-about2.45d2e81258ce984ffad1.png",
+    "static/media/img-work6.png": "/Mogo-Project/static/media/img-work6.d04bcdbfe4a1c790cbd3.png",
     "static/media/img-about3.png": "/Mogo-Project/static/media/img-about3.bd02973332c7186ccd64.png",
+    "static/media/img-logos.png": "/Mogo-Project/static/media/img-logos.ab06dfba4fda7dcc379b.png",
+    "static/media/img-quote-avatar.png": "/Mogo-Project/static/media/img-quote-avatar.346bc4d413fe59576656.png",
+    "static/media/img-people3.png": "/Mogo-Project/static/media/img-people3.161c594585bfb50e9d0a.png",
+    "static/media/img-people4.png": "/Mogo-Project/static/media/img-people4.757727a386d15aceb436.png",
+    "static/media/img-people2.png": "/Mogo-Project/static/media/img-people2.797d0dacc276d53738e9.png",
+    "static/media/img-people1.png": "/Mogo-Project/static/media/img-people1.ebc1d00d8f831d282f38.png",
     "index.html": "/Mogo-Project/index.html",
-    "main.57a519a6.css.map": "/Mogo-Project/static/css/main.57a519a6.css.map",
-    "main.fa54676d.js.map": "/Mogo-Project/static/js/main.fa54676d.js.map",
+    "main.c4c2079f.css.map": "/Mogo-Project/static/css/main.c4c2079f.css.map",
+    "main.fff33975.js.map": "/Mogo-Project/static/js/main.fff33975.js.map",
     "787.3c0fa1cb.chunk.js.map": "/Mogo-Project/static/js/787.3c0fa1cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57a519a6.css",
-    "static/js/main.fa54676d.js"
+    "static/css/main.c4c2079f.css",
+    "static/js/main.fff33975.js"
   ]
 }
