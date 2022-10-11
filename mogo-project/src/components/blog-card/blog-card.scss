@@ -1,0 +1,83 @@
+@import "../../helper/styles";
+
+.blog {
+  &-item {
+    @include flexbox(stretch, flex-start, column);
+  }
+  &-main {
+    position: relative;
+    border-radius: 6px;
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  &-date {
+    @include absoluteBottomLeft(2rem, 0);
+    transform: translateX(-2rem);
+    padding: 2.5rem 1.5rem;
+    color: white;
+    background: $tertiary-color;
+    @include flexbox(center, flex-start, column);
+  }
+  &-day {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &-month {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: $secondary-font;
+  }
+  &-meta {
+    @include flexbox(stretch, flex-start, column);
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    display: inline-block;
+    line-height: 1.4;
+    margin-block: 0.4rem;
+    @include textClamp(2);
+  }
+  &-desc {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    @include textClamp(3);
+  }
+  &-statistics {
+    i {
+      color: $tertiary-color;
+      font-size: 1.7rem;
+    }
+  }
+  &-view,
+  &-comments {
+    font-size: 1.6rem;
+  }
+  &-view {
+    margin-right: 1.7rem;
+  }
+  @include maxWidth(767px) {
+    &-item:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    &-date {
+      top: 1rem;
+      left: 1rem;
+      bottom: unset;
+      transform: unset;
+      padding: 1.5rem;
+    }
+    &-day {
+      font-size: 1.6rem;
+    }
+    &-month {
+      font-size: 1.4rem;
+    }
+  }
+}

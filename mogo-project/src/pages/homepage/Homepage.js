@@ -11,6 +11,7 @@ import BrandLogos from "../../assets/img-logos.png";
 import Work from "../../components/work/Work";
 import quotePersonImage from "../../assets/img-quote-avatar.png";
 import Feedback from "../../components/feedback/Feedback";
+import Story from "../../components/story/Story";
 const Homepage = () => {
   return (
     <>
@@ -37,6 +38,7 @@ const Homepage = () => {
         author={"Sal Vulcano"}
       ></Quote>
       <Feedback></Feedback>
+      <Story></Story>
     </>
   );
 };

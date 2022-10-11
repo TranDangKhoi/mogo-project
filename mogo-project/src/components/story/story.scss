@@ -1,0 +1,15 @@
+@import "../../helper/styles";
+
+.story {
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+  }
+  @include maxWidth(767px) {
+    &-list {
+      display: block;
+      width: 100%;
+    }
+  }
+}
