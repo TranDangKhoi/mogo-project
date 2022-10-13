@@ -12,6 +12,8 @@ import Work from "../../components/work/Work";
 import quotePersonImage from "../../assets/img-quote-avatar.png";
 import Feedback from "../../components/feedback/Feedback";
 import Story from "../../components/story/Story";
+import Map from "../../components/map/Map";
+import Footer from "../../components/footer/Footer";
 const Homepage = () => {
   return (
     <>
@@ -39,6 +41,8 @@ const Homepage = () => {
       ></Quote>
       <Feedback></Feedback>
       <Story></Story>
+      <Map></Map>
+      <Footer></Footer>
     </>
   );
 };

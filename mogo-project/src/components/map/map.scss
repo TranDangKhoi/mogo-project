@@ -1,0 +1,5 @@
+@import "../../helper/styles";
+
+.map {
+  @include linearGradientWithBgImg("../../assets/img-map.png");
+}

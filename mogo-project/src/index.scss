@@ -40,6 +40,8 @@ button,
 textarea,
 select {
   outline: none;
+  font-family: $primary-font;
+  line-height: 1;
 }
 
 p,

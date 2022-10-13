@@ -1,0 +1,116 @@
+@import "../../helper/styles";
+.footer {
+  &-top {
+    padding: 7.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  &-bottom {
+    @include flexbox(center, center);
+    span {
+      display: inline-block;
+      color: $primary-color;
+      margin-left: 0.7rem;
+    }
+  }
+  &-heading {
+    font-size: 3rem;
+    &--logo {
+      font-size: 4.6rem;
+      font-weight: 700;
+      color: $text-color;
+    }
+  }
+  &-desc {
+    color: $text-color;
+    font-style: normal;
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+  }
+  &-follower {
+    strong {
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $gray-dark-color;
+  }
+  &-text {
+    font-family: $secondary-font;
+  }
+  &-social {
+    @include flexbox(center);
+    margin-bottom: 3.5rem;
+    i {
+      color: $tertiary-color;
+      margin-left: 1.5rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+  &-form {
+    width: 100%;
+    max-width: 38rem;
+    @include flexbox();
+  }
+  &-form-input {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid $gray-dark-color;
+    border-right: 0;
+    font-family: $secondary-font;
+    font-style: italic;
+  }
+  &-form-button {
+    color: white;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    border: 0;
+    background-color: $tertiary-color;
+    font-weight: 600;
+    cursor: pointer;
+    // Blog
+  }
+  &-blog {
+    @include flexbox(stretch, space-between, column);
+    row-gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  &-blog-item {
+    @include flexbox(center);
+    column-gap: 1.5rem;
+    cursor: pointer;
+  }
+  &-blog-image {
+    @include size(12rem, 8rem);
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  &-blog-title {
+    font-weight: 600;
+    @include textClamp(2);
+  }
+  &-blog-date {
+    color: $text-color;
+  }
+  // Gallery
+  &-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: 120px 120px 120px;
+    margin-top: 2rem;
+  }
+  &-gallery-image {
+    @include size(100%);
+  }
+  @include maxWidth(1023px) {
+    &-top {
+      display: block;
+    }
+    &-column {
+      margin-bottom: 2rem;
+    }
+  }
+}

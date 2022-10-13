@@ -1,6 +1,7 @@
 @import "../../helper/styles";
 
 .story {
+  margin-bottom: 10rem;
   &-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
