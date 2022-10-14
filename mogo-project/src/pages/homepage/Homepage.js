@@ -22,23 +22,10 @@ const Homepage = () => {
       <Services></Services>
       <Device></Device>
       <WhatWeDo></WhatWeDo>
-      <Quote
-        faIconClassName={"fa-solid fa-message"}
-        quote={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis neque accusantium repellat dolor, voluptates ametquasi iure excepturi natus recusandae facere sint expeditacorrupti, necessitatibus labore non sunt voluptate animi."
-        }
-        greenBorder={true}
-      ></Quote>
+      <Quote></Quote>
       <Team></Team>
       <Brand>{[BrandLogos]}</Brand>
       <Work></Work>
-      <Quote
-        imgSrc={quotePersonImage}
-        quote={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis neque accusantium repellat dolor, voluptates ametquasi iure excepturi natus recusandae facere sint expeditacorrupti, necessitatibus labore non sunt voluptate animi."
-        }
-        author={"Sal Vulcano"}
-      ></Quote>
       <Feedback></Feedback>
       <Story></Story>
       <Map></Map>
