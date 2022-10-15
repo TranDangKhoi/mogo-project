@@ -26,6 +26,7 @@ const Homepage = () => {
       <Team></Team>
       <Brand>{[BrandLogos]}</Brand>
       <Work></Work>
+      <Quote saidByPerson={true}></Quote>
       <Feedback></Feedback>
       <Story></Story>
       <Map></Map>

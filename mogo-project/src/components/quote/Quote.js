@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../container/Container";
 import quoteAvatar from "../../assets/img-quote-avatar.png";
 import "./quote.scss";
+import Slider from "react-slick";
 const Quote = ({ saidByPerson = false }) => {
   return (
     <div className="quote">
